@@ -46,8 +46,8 @@ body {
 }
 
 .nav-brand .logo {
-    height: 110px;        /* was 50px */
-    width: auto;
+    height: 250px;        /* was 50px */
+    width: 250px;
     filter: brightness(1.25) contrast(1.15);
 }
 
