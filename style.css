@@ -45,10 +45,10 @@ body {
     align-items: center;
 }
 
-.nav-brand .logo {
-    height: 500px;        /* was 50px */
-    width: 500px;
-    filter: brightness(1.25) contrast(1.15);
+/*.nav-brand .logo {
+    height: 70px;        /* was 50px */
+    width: autopx;
+    filter: brightness(1.25) contrast(1.15);*/
 }
 
 .mobile-menu-toggle {
