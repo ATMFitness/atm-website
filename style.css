@@ -27,14 +27,15 @@ body {
     padding: 0 20px;
 }
 
+/* Navigation */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #2b2b2b;            /* slightly lighter, helps the logo stand out */
+    background: rgba(26, 26, 26, 0.98);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 18px 0;                /* was 15px */
+    padding: 15px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
@@ -45,9 +46,8 @@ body {
 }
 
 .nav-brand .logo {
-    height: 72px;          /* was 50px */
+    height: 50px;
     width: auto;
-    filter: brightness(1.15) contrast(1.1); /* makes it pop a bit on the dark bar */
 }
 
 .mobile-menu-toggle {
@@ -103,7 +103,7 @@ body {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    margin-top: 95px;
+    margin-top: 80px;
 }
 
 .hero-overlay {
@@ -728,8 +728,6 @@ body {
 @media (max-width: 768px) {
     .mobile-menu-toggle {
         display: block;
-    .nav-brand .logo {
-        height: 64px;   /* a little smaller on phones, still clearly visible */
     }
 
     .nav-menu {
