@@ -27,15 +27,14 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(90deg, #2b2b2b, #3b3b3b); /* slightly lighter + subtle gradient */
+    background: #2b2b2b;            /* slightly lighter, helps the logo stand out */
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 15px 0;
+    padding: 18px 0;                /* was 15px */
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
@@ -45,10 +44,10 @@ body {
     align-items: center;
 }
 
-/*.nav-brand .logo {
-    height: 70px;        /* was 50px */
-    width: autopx;
-    filter: brightness(1.25) contrast(1.15);*/
+.nav-brand .logo {
+    height: 72px;          /* was 50px */
+    width: auto;
+    filter: brightness(1.15) contrast(1.1); /* makes it pop a bit on the dark bar */
 }
 
 .mobile-menu-toggle {
@@ -104,7 +103,7 @@ body {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    margin-top: 80px;
+    margin-top: 95px;
 }
 
 .hero-overlay {
@@ -730,7 +729,7 @@ body {
     .mobile-menu-toggle {
         display: block;
     .nav-brand .logo {
-        height: 80px;  /* a bit bigger on phones */
+        height: 64px;   /* a little smaller on phones, still clearly visible */
     }
 
     .nav-menu {
@@ -794,39 +793,5 @@ body {
     .footer-content {
         grid-template-columns: 1fr;
         gap: 40px;
-    }
-}
-/* === FINAL HEADER + LOGO TUNING === */
-
-/* Slightly taller than default, but not huge */
-.navbar {
-    padding: 14px 0;
-}
-
-/* Medium-large logo on desktop */
-.nav-brand .logo {
-    max-height: 80px;      /* sweet spot */
-    width: auto;
-    height: auto;
-    filter: brightness(1.15) contrast(1.1); /* small pop, not overdone */
-}
-
-/* Hero starts just below header */
-.hero {
-    margin-top: 95px;      /* adjust if you see overlap */
-}
-
-/* Mobile tweaks */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 0;
-    }
-
-    .nav-brand .logo {
-        max-height: 70px;  /* still clearly visible, but not overwhelming */
-    }
-
-    .hero {
-        margin-top: 90px;
     }
 }
