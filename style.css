@@ -796,3 +796,37 @@ body {
         gap: 40px;
     }
 }
+/* === FINAL HEADER + LOGO TUNING === */
+
+/* Slightly taller than default, but not huge */
+.navbar {
+    padding: 14px 0;
+}
+
+/* Medium-large logo on desktop */
+.nav-brand .logo {
+    max-height: 80px;      /* sweet spot */
+    width: auto;
+    height: auto;
+    filter: brightness(1.15) contrast(1.1); /* small pop, not overdone */
+}
+
+/* Hero starts just below header */
+.hero {
+    margin-top: 95px;      /* adjust if you see overlap */
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .nav-brand .logo {
+        max-height: 70px;  /* still clearly visible, but not overwhelming */
+    }
+
+    .hero {
+        margin-top: 90px;
+    }
+}
